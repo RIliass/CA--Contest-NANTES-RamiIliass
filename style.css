@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    margin:  0;
+    padding: 0;
+    font-family: Dosis, sans-serif;
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #9191912f;
+}
+nav h1{
+    color: #9191912f;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 4px;
+    margin-left: 300px;
+}   
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+
