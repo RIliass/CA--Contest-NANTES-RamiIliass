@@ -38,7 +38,8 @@ header{
     background: url('images/nailo.JPG');
     background-size: cover;
     color: white;
-    padding: 40px;    
+    padding: 40px;  
+    animation: text 3s 1;  
 }
 
 header h1{
@@ -54,6 +55,21 @@ header h4{
     border-bottom: 1px solid white;
 }
 
+@keyframes text {
+    0%{
+        color: rgb(12, 66, 182);
+        margin-bottom: -40px ;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
 .main{
     margin-top: 40px;
     display: flex;
@@ -66,26 +82,29 @@ header h4{
     justify-content: center;
     margin-bottom: 20px;
 }
+
+/* J'ai essayé d'alligner l'image et le texte sur la meme ligne pour changer la couleur du background mais ça ne marche pas */
 .main .content .who .left{
     flex: 0 0 30%;
     padding: 20px;
     background-color:black;
     color: #fff;
-    flex-wrap: wrap;
-    justify-content: center;
+}
+.main .content .who .left .h1{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color:black;
+    color: #fff;
 }
 .main .content .who .right{
-    flex: 0 0 70%;
-    
-    
-}
+    flex: 0 0 70%;    
+    }
 .main .content .who .right img{
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
     margin-top: 5px;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 footer{
@@ -106,7 +125,8 @@ footer h1{
 footer img{
     height: 200px;
     width: 300px;
-    align-items: center;    
+    align-items: center;   
+    margin-left: 50px; 
 }
 
 @media screen and (max-width:680px){
